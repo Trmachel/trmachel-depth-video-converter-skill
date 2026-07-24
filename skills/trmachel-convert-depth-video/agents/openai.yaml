@@ -1,0 +1,7 @@
+interface:
+  display_name: "Trmachel Depth Video Converter"
+  short_description: "Convert MP4/MOV files into local grayscale depth videos"
+  default_prompt: "Use $trmachel-convert-depth-video to launch the local depth video converter and help me process a video."
+
+policy:
+  allow_implicit_invocation: true

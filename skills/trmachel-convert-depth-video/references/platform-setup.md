@@ -80,4 +80,3 @@ ffmpeg -i input.mov -c:v libx264 -pix_fmt yuv420p -c:a aac input.mp4
 
 The first version converts variable-frame-rate input to the detected average
 constant frame rate.
-

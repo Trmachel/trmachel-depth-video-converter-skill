@@ -246,27 +246,27 @@ docs/superpowers/specs/2026-07-24-depth-video-converter-design.md
 仓库中的可安装 Skill 位于：
 
 ```text
-skills/convert-depth-video/
+skills/trmachel-convert-depth-video/
 ```
 
 安装后，可以对 Codex 说：
 
 ```text
-Use $convert-depth-video to launch the local depth video converter.
+Use $trmachel-convert-depth-video to launch the local depth video converter.
 ```
 
 Skill 自带跨平台启动器。它会在用户缓存目录创建隔离虚拟环境，不会把
 `.venv` 或模型权重写入 Skill 目录：
 
 ```bash
-python skills/convert-depth-video/scripts/launch.py --setup-only
-python skills/convert-depth-video/scripts/launch.py --inbrowser
+python skills/trmachel-convert-depth-video/scripts/launch.py --setup-only
+python skills/trmachel-convert-depth-video/scripts/launch.py --inbrowser
 ```
 
 从 GitHub 安装时，使用指向技能子目录的地址：
 
 ```text
-https://github.com/Trmachel/depth-video-converter-skill/tree/main/skills/convert-depth-video
+https://github.com/Trmachel/trmachel-depth-video-converter-skill/tree/main/skills/trmachel-convert-depth-video
 ```
 
 本仓库应用代码和 Skill 使用 Apache-2.0 许可证。Depth Anything V2 模型

@@ -1,5 +1,5 @@
 ---
-name: convert-depth-video
+name: trmachel-convert-depth-video
 description: Install, launch, operate, and troubleshoot a local Depth Anything V2 video converter on Windows or macOS. Use when a user asks to convert MP4 or MOV files into grayscale relative-depth videos, start the Gradio converter UI, select a model size or output resolution, reduce video-depth flicker, preserve audio, or diagnose CUDA, Apple MPS, CPU, ffmpeg, model-download, and video-encoding failures.
 ---
 
@@ -87,6 +87,5 @@ After changes, run:
 ```text
 python scripts/launch.py --setup-only
 python -m pytest -q
-python /path/to/skill-creator/scripts/quick_validate.py /path/to/convert-depth-video
+python /path/to/skill-creator/scripts/quick_validate.py /path/to/trmachel-convert-depth-video
 ```
-

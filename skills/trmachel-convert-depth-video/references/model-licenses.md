@@ -18,4 +18,3 @@ Official references:
 - `https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf`
 - `https://huggingface.co/depth-anything/Depth-Anything-V2-Base-hf`
 - `https://huggingface.co/depth-anything/Depth-Anything-V2-Large-hf`
-
