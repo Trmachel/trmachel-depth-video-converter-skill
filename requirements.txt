@@ -1,0 +1,11 @@
+# Python 3.10-3.14 supported; Python 3.11 or 3.12 recommended
+torch>=2.2
+torchvision>=0.17
+transformers>=4.45,<6
+gradio>=5.0,<7
+opencv-python>=4.9,<5
+numpy>=1.26,<3
+Pillow>=10,<13
+imageio-ffmpeg>=0.5,<1
+safetensors>=0.4
+pytest>=8,<10
