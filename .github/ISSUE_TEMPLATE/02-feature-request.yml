@@ -1,0 +1,67 @@
+name: Feature request
+description: Suggest an improvement to the converter, launcher, or maintenance workflow.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the user problem before proposing a specific implementation. This helps keep the project focused and maintainable.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or workflow gap
+      description: What is difficult today, and who experiences it?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior, interface, or workflow you would like.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include workarounds or simpler options you have tried.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Video conversion
+        - Model or inference
+        - User interface
+        - Cross-platform installation
+        - Codex Skill
+        - Testing and CI
+        - Documentation
+        - Security and privacy
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to help test this feature.
+        - label: I am willing to submit a pull request.
+        - label: I can provide a non-sensitive sample or benchmark.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and the roadmap.
+          required: true
+        - label: This request does not require uploading user media to a third party by default.
+          required: true

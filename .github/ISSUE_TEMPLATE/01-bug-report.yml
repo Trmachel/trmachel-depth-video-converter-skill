@@ -1,0 +1,118 @@
+name: Bug report
+description: Report a reproducible problem in the converter or Codex Skill.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the project. Do not upload private or sensitive media. Use a short synthetic clip when possible and redact local paths, usernames, tokens, and other secrets from logs.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Operating system
+      options:
+        - Windows 10/11
+        - macOS Apple Silicon
+        - macOS Intel
+        - Linux or other
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      description: Run `python --version`.
+      placeholder: "Python 3.11.9"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: acceleration
+    attributes:
+      label: Compute mode
+      options:
+        - NVIDIA CUDA
+        - Apple MPS
+        - CPU
+        - Unknown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: model
+    attributes:
+      label: Model size
+      options:
+        - Small
+        - Base
+        - Large
+        - Not applicable
+    validations:
+      required: true
+
+  - type: dropdown
+    id: input-format
+    attributes:
+      label: Input format
+      options:
+        - MP4
+        - MOV
+        - Other
+        - Not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest sequence that reproduces the problem.
+      placeholder: |
+        1. Start with ...
+        2. Select ...
+        3. Click ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste only the relevant section. Redact private paths and secrets.
+      render: shell
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Include GPU model, source codec, resolution, or a link to a non-sensitive minimal sample when relevant.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I did not attach private, copyrighted, or sensitive media without permission.
+          required: true
+        - label: I can reproduce the problem with the current `main` branch or latest release.
+          required: true

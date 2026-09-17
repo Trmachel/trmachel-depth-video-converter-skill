@@ -1,5 +1,14 @@
 # Python 深度视频转换器
 
+<!-- OSS-READINESS:BEGIN -->
+[简体中文](README.md) | [English](README.en.md)
+
+[![CI](https://github.com/Trmachel/trmachel-depth-video-converter-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/Trmachel/trmachel-depth-video-converter-skill/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/Trmachel/trmachel-depth-video-converter-skill/actions/workflows/codeql.yml/badge.svg)](https://github.com/Trmachel/trmachel-depth-video-converter-skill/actions/workflows/codeql.yml)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+<!-- OSS-READINESS:END -->
+
+
 这是一个从零构建的本地 Python 应用：上传普通 MP4 或 MOV 视频，使用 Depth Anything V2 逐帧估算相对深度，并导出兼容性良好的灰度 H.264 MP4。
 
 应用不会把视频上传到云端。首次使用某个模型尺寸时，会从 Hugging Face 下载模型并存入本机缓存；之后可离线使用该模型。
@@ -271,3 +280,14 @@ https://github.com/Trmachel/trmachel-depth-video-converter-skill/tree/main/skill
 
 本仓库应用代码和 Skill 使用 Apache-2.0 许可证。Depth Anything V2 模型
 权重采用独立许可证：Small 为 Apache-2.0，Base/Large 为 CC BY-NC 4.0。
+
+## 开源维护
+
+- [英文说明](README.en.md)
+- [贡献指南](CONTRIBUTING.md)
+- [安全策略](SECURITY.md)
+- [支持方式](SUPPORT.md)
+- [路线图](ROADMAP.md)
+- [更新日志](CHANGELOG.md)
+- [维护者](MAINTAINERS.md)
+- [第三方许可证说明](THIRD_PARTY_NOTICES.md)
