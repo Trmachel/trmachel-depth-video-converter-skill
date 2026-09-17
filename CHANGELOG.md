@@ -6,6 +6,8 @@ The format is based on Keep a Changelog, and the project intends to use Semantic
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-09-17
+
 ### Added
 
 - Cross-platform GitHub Actions test matrix for Python 3.11 and 3.12.
@@ -15,7 +17,7 @@ The format is based on Keep a Changelog, and the project intends to use Semantic
 - Automated source archive and checksum creation for version tags.
 - English project documentation.
 
-## [0.1.0] - 2026-09-17
+## [0.1.0] - 2026-07-24
 
 ### Added
 

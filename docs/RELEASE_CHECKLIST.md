@@ -22,8 +22,9 @@ Use an annotated Semantic Versioning tag:
 ```bash
 git switch main
 git pull --ff-only
-git tag -a v0.1.0 -m "Release v0.1.0"
-git push origin v0.1.0
+VERSION=v0.1.1
+git tag -a "$VERSION" -m "Release $VERSION"
+git push origin "$VERSION"
 ```
 
 The release workflow will run tests, create a source archive and SHA-256 checksum, and create a GitHub Release with generated notes.
