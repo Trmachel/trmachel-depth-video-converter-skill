@@ -1,5 +1,5 @@
 # Python 3.10-3.14 supported; Python 3.11 or 3.12 recommended
-torch>=2.2
+torch>=2.14.0
 torchvision>=0.17
 transformers>=4.45,<6
 gradio>=5.0,<7
